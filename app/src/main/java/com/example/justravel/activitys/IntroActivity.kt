@@ -1,11 +1,14 @@
 package com.example.justravel.activitys
 
 import android.content.Intent
+import android.media.MediaPlayer
 import android.os.Bundle
+import android.util.Log
 import android.view.WindowManager
 import com.example.justravel.databinding.ActivityIntroBinding
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
+
 
 class IntroActivity : BaseActivity() {
     private lateinit var binding: ActivityIntroBinding
@@ -24,11 +27,28 @@ class IntroActivity : BaseActivity() {
 
         )
 
-        
+        storageRef.downloadUrl.addOnSuccessListener { uri ->
+
+            binding.videoIntro?.setVideoURI(uri)
+
+            binding.videoIntro?.setOnPreparedListener(object : MediaPlayer.OnPreparedListener {
+                override fun onPrepared(mp: MediaPlayer?) {
+                    //Start Playback
+                    binding.videoIntro?.start()
+                    //Loop Video
+                    mp!!.isLooping = true;
+
+                }
+            });
 
 
-        binding.videoIntro?.setVideoPath(storageRef.toString())
-        binding.videoIntro?.start()
+
+        }
+
+
+
+
+
 
 
         binding.btnSignUp?.setOnClickListener {

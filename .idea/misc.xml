@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Alina/Desktop/ProyectoFunalAlinaVevel/app/src/main/res/layout-v23/activity_intro.xml" value="0.3625" />
+        <entry key="..\:/Users/Alina/Desktop/ProyectoFunalAlinaVevel/app/src/main/res/drawable/shape_button_rounded.xml" value="0.2395" />
+        <entry key="..\:/Users/Alina/Desktop/ProyectoFunalAlinaVevel/app/src/main/res/drawable/shape_image_view_border.xml" value="0.2395" />
+        <entry key="..\:/Users/Alina/Desktop/ProyectoFunalAlinaVevel/app/src/main/res/layout-v23/activity_intro.xml" value="0.33" />
+        <entry key="..\:/Users/Alina/Desktop/ProyectoFunalAlinaVevel/app/src/main/res/layout/activity_intro.xml" value="0.18802083333333333" />
       </map>
     </option>
   </component>

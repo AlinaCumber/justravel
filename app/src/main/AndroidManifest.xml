@@ -72,6 +72,7 @@
         </activity>
         <activity
             android:name=".activitys.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
